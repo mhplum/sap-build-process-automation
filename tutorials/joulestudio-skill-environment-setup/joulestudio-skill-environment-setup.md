@@ -15,7 +15,7 @@ parser: v2
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant configured for Joule and Joule Studio
+- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 
 ## You will learn
   - How to create a test environment
@@ -45,12 +45,12 @@ parser: v2
     <!-- border -->
     ![Joule tab in environment](joulestudio-environments-joule.png)
 
-Since this is a new environment and you have not yet deployed a Joule skill, there is no data and you cannot launch the standalone Joule Digital Assistant.
+Since this is a new environment and you have not yet deployed a Joule skill, there is no data and you cannot launch the standalone Joule Digital Assistant. 
 
 
 ### Create Destinations
 
-1. Open **SAP Cloud Platform Cockpit** and go to **Connectivity > Destinations (New)**.
+1. Open **SAP Cloud Platform Cockpit** and go to **Connectivity > Destinations**.
 
 2. Choose **Create**.
 
@@ -70,11 +70,11 @@ Since this is a new environment and you have not yet deployed a Joule skill, the
 
 6. Enter the following parameters:
 
-    |  Key     | Value
+    |  Key            | Value
     |  :------------- | :-------------
     |  **`sap.processautomation.enabled`**                         | **`true`**
     |  **`sap.applicationdevelopment.actions.enabled`**            | **`true`**
-    |  **`sap.build.usage`**            | **`odata_gen`**
+    |  **`sap.build.usage`**                                       | **`odata_gen`**
 
  
 
@@ -146,7 +146,7 @@ Since this is a new environment and you have not yet deployed a Joule skill, the
 
 10. Repeat the above steps to add your **S4HANA_MOCK** destination.
 
-11. Check that both destinations have been configured for both the **Public** and your own environments.
+11. Check that both destinations have been configured for both the **Public** and your own environments. 
 
     <!-- border -->
     ![Lobby](joulestudio-controltower-destinations-check.png)
