@@ -10,12 +10,12 @@ parser: v2
 ---
 
 
-# Use Joule Studio to Create and Deploy a Joule Skill
-<!-- description --> Use Joule Studio to create and deploy a Joule skill that consumes services from two different systems.
+# Use Joule Studio, Classic Edition to Create and Deploy a Joule Skill
+<!-- description --> Use Joule Studio, classic edition to create and deploy a Joule skill that consumes services from two different systems.
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
+- Access to an SAP BTP tenant configured for Joule and Joule Studio classic. See [Set Up Joule Studio classic](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 - You have [configured the destinations to the OData services](joulestudio-skill-environment-setup)
 - You have [created and configured the action projects](joulestudio-skill-action-create)
 
@@ -27,7 +27,7 @@ parser: v2
 
 
 ## Intro
-Joule Studio in SAP Build is the new design time focused on developing AI capabilities. Joule studio gives SAP customers and partners the possibility to develop AI capabilities, such as custom Joule skills and custom AI agents, to extend the capabilities of Joule co-pilot and optimize organization-specific automation. 
+Joule Studio classic in SAP Build is the design time focused on developing AI capabilities. Joule Studio classic gives SAP customers and partners the possibility to develop AI capabilities, such as custom Joule skills and custom AI agents, to extend the capabilities of Joule co-pilot and optimize organization-specific automation. 
 
 
 ### Create a Joule Skill
@@ -56,18 +56,18 @@ Joule Studio in SAP Build is the new design time focused on developing AI capabi
 6. Choose **Create** **>** **Joule Skill**.
 
     <!-- border -->
-    ![Joule Studio create](joulestudio-skill-create-skill.png)
+    ![Joule Studio classic create](joulestudio-skill-create-skill.png)
 
 7. Enter name **`CreateBadge`** and description **`Create a badge for an employee given the employee's ID`**, then choose **Create**.
 
     <!-- border -->
-    ![Joule Studio create popup](joulestudio-skill-create-skill-2.png)
+    ![Joule Studio classic create popup](joulestudio-skill-create-skill-2.png)
 
 
     > The description is important because Joule will use it to identify the correct skill to select during a conversation.
 
     <!-- border -->
-    ![Joule Studio fresh project](joulestudio-skill-create-new.png)
+    ![Joule Studio classic fresh project](joulestudio-skill-create-new.png)
 
 
 ### Define the Input and Output Parameters
@@ -138,46 +138,46 @@ Joule Studio in SAP Build is the new design time focused on developing AI capabi
 1. Choose the **+** between **Trigger** and **End**.
 
     <!-- border -->
-    ![Joule Studio add action](joulestudio-skill-firstaction1.png)
+    ![Joule Studio classic add action](joulestudio-skill-firstaction1.png)
 
 2. Choose **Call Action**.
 
     <!-- border -->
-    ![Joule Studio browse all actions](joulestudio-skill-firstaction2.png)
+    ![Joule Studio classic browse all actions](joulestudio-skill-firstaction2.png)
 
 3. Choose **Browse All Actions**.
 
     <!-- border -->
-    ![Joule Studio add action](joulestudio-skill-firstaction3.png)
+    ![Joule Studio classic add action](joulestudio-skill-firstaction3.png)
 
 4. Select the action **GET Retrieves business partner data by using business partner number** and then choose **Add**.
 
      <!-- border -->
-     ![Joule Studio create variable](joulestudio-skill-firstaction4.png)
+     ![Joule Studio classic create variable](joulestudio-skill-firstaction4.png)
 
 5. Choose **Select a Destination**, then choose **+ Create a Destination Variable**.
 
     <!-- border -->
-    ![Joule Studio create variable](joulestudio-skill-firstaction5.png)
+    ![Joule Studio classic create variable](joulestudio-skill-firstaction5.png)
 
 6. Enter **`S4HANA_MOCK`** and a description, then choose **Create**.
 
 7. Select the destination variable.
 
     <!-- border -->
-    ![Joule Studio select variable](joulestudio-skill-firstaction6.png)
+    ![Joule Studio classic select variable](joulestudio-skill-firstaction6.png)
 
 8. Choose **Inputs**, then choose the **`BusinessPartner`** field to open the **Skill Content** pane.
 
     <!-- border -->
-    ![Joule Studio map input](joulestudio-skill-firstaction7.png)
+    ![Joule Studio classic map input](joulestudio-skill-firstaction7.png)
 
 9. Choose **EmployeeID**.
 
 10. Choose **Outputs** and expand the tree to see it.
 
      <!-- border -->
-     ![Joule Studio inspect output](joulestudio-skill-firstaction8.png)
+     ![Joule Studio classic inspect output](joulestudio-skill-firstaction8.png)
 
 11. Close the pane and then choose **Save**.
 
@@ -186,27 +186,27 @@ Joule Studio in SAP Build is the new design time focused on developing AI capabi
 1. Choose the **+** between the first action and **End**.
 
     <!-- border -->
-    ![Joule Studio action](joulestudio-skill-secondaction2.png)
+    ![Joule Studio classic action](joulestudio-skill-secondaction2.png)
 
 2. Choose **Call Action**.
 
     <!-- border -->
-    ![Joule Studio browse actions](joulestudio-skill-secondaction3.png)
+    ![Joule Studio classic browse actions](joulestudio-skill-secondaction3.png)
 
 3. Choose **Browse All Actions**.
 
     <!-- border -->
-    ![Joule Studio select action](joulestudio-skill-secondaction3b.png)
+    ![Joule Studio classic select action](joulestudio-skill-secondaction3b.png)
 
 4. Select the action **POST Invoke action createBadge**, then choose **Add** beside it.
 
     <!-- border -->
-    ![Joule Studio create variable](joulestudio-skill-secondaction4.png)
+    ![Joule Studio classic create variable](joulestudio-skill-secondaction4.png)
 
 5. **Choose Select a Destination**, then choose **+ Create a Destination Variable**.
 
     <!-- border -->
-    ![Joule Studio create variable](joulestudio-skill-secondaction5.png)
+    ![Joule Studio classic create variable](joulestudio-skill-secondaction5.png)
 
 6. Enter **`Badge_Service`** and a description, then choose **Create**.
 
@@ -217,12 +217,12 @@ Joule Studio in SAP Build is the new design time focused on developing AI capabi
 9. Expand the tree in the **Skill Content** pane and map the fields as shown.
 
     <!-- border -->
-    ![Joule Studio map inputs](joulestudio-skill-secondaction6.png)
+    ![Joule Studio classic map inputs](joulestudio-skill-secondaction6.png)
 
 10. Choose **Outputs** and then expand the tree to see the **result**.
 
     <!-- border -->
-    ![Joule Studio inspect outputs](joulestudio-skill-secondaction7.png)
+    ![Joule Studio classic inspect outputs](joulestudio-skill-secondaction7.png)
 
 11. Close the pane and then choose **Save**.
 
