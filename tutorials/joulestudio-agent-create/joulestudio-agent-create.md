@@ -10,13 +10,13 @@ parser: v2
 ---
 
 
-# Use Joule Studio to Create an Agent
-<!-- description --> Use Joule Studio to create and test an agent.
+# Use Joule Studio, Classic Edition to Create an Agent
+<!-- description --> Use Joule Studio, classic edition to create and test an agent.
 
 ## Prerequisites
 
-- Joule Studio in SAP Build. See [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
-- You understand the tutorial group [Build Your First Joule Skill in Joule Studio](https://developers.sap.com/group.joule-studio-first-skill.html).
+- Joule Studio, classic edition in SAP Build. See [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
+- You understand the tutorial group [Build Your First Joule Skill in Joule Studio, Classic Edition](https://developers.sap.com/group.joule-studio-first-skill.html).
 
 
 
@@ -26,7 +26,7 @@ parser: v2
 
 
 ## Intro
-This scenario simulates a real-world challenge faced by maintenance planners: determining if the necessary materials for maintenance orders are available in stock. Planners currently perform this validation manually, often switching between multiple systems and spreadsheets, which is both inefficient and error prone. You will use a subset of a CAP-based backend service running on SAP BTP, exposed through a configured destination. This tutorial introduces you to the basic features of the new agent building capabilities of Joule Studio. Joule skills are treated as tools and are not explained here - you will import a project with the necessary skills and actions ready for use. Document grounding is excluded here because that requires SAP Core AI and extra configuration. 
+This scenario simulates a real-world challenge faced by maintenance planners: determining if the necessary materials for maintenance orders are available in stock. Planners currently perform this validation manually, often switching between multiple systems and spreadsheets, which is both inefficient and error prone. You will use a subset of a CAP-based backend service running on SAP BTP, exposed through a configured destination. This tutorial introduces you to the basic features of the new agent building capabilities of Joule Studio classic. Joule skills are treated as tools and are not explained here - you will import a project with the necessary skills and actions ready for use. Document grounding is excluded here because that requires SAP Core AI and extra configuration. 
 
 
 ### Create a Destination
@@ -48,7 +48,7 @@ This scenario simulates a real-world challenge faced by maintenance planners: de
 
 ### Create a Private Environment
 
-Joule Studio's dedicated private environments provide safe, isolated spaces for experimenting with Joule agents. They allow you to build, test, and refine your agents and skills without affecting any shared or productive environments.
+Joule Studio classic's dedicated private environments provide safe, isolated spaces for experimenting with Joule agents. They allow you to build, test, and refine your agents and skills without affecting any shared or productive environments.
 
 1. Go to the **Lobby** and choose **Control Tower**, then the tile **Environments**.
 
@@ -100,7 +100,7 @@ Joule Studio's dedicated private environments provide safe, isolated spaces for 
     <!-- border -->
     ![Five skills](five_skills.png)
 
-    In addition to the Joule Studio project, an action project (**Maintenance Fulfillment Agent API**) has also been imported and is ready to use - if you check under **Connectors** > **Actions** in the **Lobby**, you will find the project and can see that it is published.
+    In addition to the Joule Studio classic project, an action project (**Maintenance Fulfillment Agent API**) has also been imported and is ready to use - if you check under **Connectors** > **Actions** in the **Lobby**, you will find the project and can see that it is published.
 
 ### Create an Agent
 
@@ -234,7 +234,7 @@ After you have created your Joule agent, you can test its functionalities and wo
 
 5. Choose **Stop Testing**.
 
-You now know how to quickly create and test an agent in Joule Studio. If you want, try experimenting with the prompts or model choice, for example. Once you are satisfied with testing in your private environment, you can deploy to a shared environment.
+You now know how to quickly create and test an agent in Joule Studio classic. If you want, try experimenting with the prompts or model choice, for example. Once you are satisfied with testing in your private environment, you can deploy to a shared environment.
 
 ### Test yourself
 
