@@ -11,7 +11,7 @@ parser: v2
 
 
 # Use Joule Studio, Classic Edition to Create an Agent
-<!-- description --> Use Joule Studio, classic edition to create and test an agent.
+<!-- description --> Use Joule Studio, classic edition to create and test an agent. 
 
 ## Prerequisites
 
