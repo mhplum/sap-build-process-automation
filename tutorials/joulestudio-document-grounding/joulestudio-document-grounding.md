@@ -10,14 +10,14 @@ parser: v2
 ---
 
 
-# Use Joule Studio with Document Grounding
-<!-- description --> Use Joule Studio to create an agent that uses document grounding.
+# Use Joule Studio, Classic Edition with Document Grounding
+<!-- description --> Use Joule Studio, classic edition to create an agent that uses document grounding.
 
 ## Prerequisites
 
-- Joule Studio in SAP Build. See [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
-- You understand the tutorial group [Build Your First Joule Skill in Joule Studio](https://developers.sap.com/group.joule-studio-first-skill.html).
-- You have successfully completed the tutorial [Use Joule Studio to Create an Agent](https://developers.sap.com/tutorials/joulestudio-agent-create.html).
+- Joule Studio, classic edition in SAP Build. See [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
+- You understand the tutorial group [Build Your First Joule Skill in Joule Studio, Classic Edition](https://developers.sap.com/group.joule-studio-first-skill.html).
+- You have successfully completed the tutorial [Use Joule Studio, Classic Edition to Create an Agent](https://developers.sap.com/tutorials/joulestudio-agent-create.html).
 - SAP AI Core and an S3 Object Store for document grounding. See the tutorial [Orchestration with Grounding Capabilities in SAP AI Core](https://developers.sap.com/tutorials/ai-core-orchestration-grounding.html).
     - You do not need to create any resource groups or pipelines. This will be done for you when you configure document grounding in this tutorial. If you want to understand what is going on behind the scenes, see [Joule Studio: How to Create Document Grounding](https://community.sap.com/t5/tooling-sap-build-blog-posts/joule-studio-how-to-create-document-grounding/ba-p/14306631)
     - Documents for grounding uploaded to the object store. Use files [guidelines1.docx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/joulestudio-document-grounding/guidelines1.docx) and [guidelines2.docx](https://github.com/sap-tutorials/sap-build-process-automation/blob/main/tutorials/joulestudio-document-grounding/guidelines2.docx)
@@ -25,12 +25,12 @@ parser: v2
 
 
 ## You will learn
-  - How to configure Joule Studio to connect to SAP AI Core and an S3 Object Store
+  - How to configure Joule Studio, classic edition to connect to SAP AI Core and an S3 Object Store
   - How to use the document grounding tool in an agent
 
 
 ## Intro
-If your Joule Studio is not already configured to use SAP AI Core and your object store, you will need to add destinations to each.
+If your Joule Studio classic is not already configured to use SAP AI Core and your object store, you will need to add destinations to each.
 
 
 ### Create Destinations for SAP Core AI
@@ -49,7 +49,7 @@ If your Joule Studio is not already configured to use SAP AI Core and your objec
     <!-- border -->
     ![AI Core key](ai_core_extended.png)
 
-3. In the BTP Cockpit of your Joule Studio subaccount, go to **Connectivity** > **Destinations**.
+3. In the BTP Cockpit of your Joule Studio classic subaccount, go to **Connectivity** > **Destinations**.
 
 4. Choose **Create** and import your edited json file. 
 
@@ -91,7 +91,7 @@ Your instructor will have already set up the destinations.
     <!-- border -->
     ![S3 Object Store key](s3-object-store.png)
 
-3. In the BTP Cockpit of your Joule Studio subaccount, go to **Connectivity** > **Destinations**.
+3. In the BTP Cockpit of your Joule Studio classic subaccount, go to **Connectivity** > **Destinations**.
 
 4. Choose **Create** and import your edited json file. 
 
@@ -115,7 +115,7 @@ Your instructor will have already set up the destination.
 
 The object stores that document grounding tools will have access to are maintained here. The entity called resource group here is not the same as a resource group in SAP AI Core, though one will be created there among other things.
 
-1. In the **Lobby** of Joule Studio, choose **Control Tower** > **Document Grounding**.
+1. In the **Lobby** of Joule Studio classic, choose **Control Tower** > **Document Grounding**.
 
     <!-- border -->
     ![Document Grounding tile](control-tower-document-grounding.png)
@@ -153,7 +153,7 @@ The object stores that document grounding tools will have access to are maintain
 
 You will extend the project that you completed in the previous tutorial.
 
-1. In the **Lobby** of Joule Studio, navigate to **Versions** of your project and choose **Save as New Project**.
+1. In the **Lobby** of Joule Studio classic, navigate to **Versions** of your project and choose **Save as New Project**.
 
     <!-- border -->
     ![Lobby](save-as-new-project.png)
