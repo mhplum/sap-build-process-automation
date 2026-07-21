@@ -11,11 +11,11 @@ parser: v2
 
 
 # Create a Filter in an Action Project
-<!-- description --> Create a filter in an action project to simplify the use of the OData service in Joule Studio.
+<!-- description --> Create a filter in an action project to simplify the use of the OData service in Joule Studio, classic edition.
 
 ## Prerequisites
 
-- Access to an SAP BTP tenant configured for Joule and Joule Studio. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
+- Access to an SAP BTP tenant configured for Joule and Joule Studio, classic edition. See [Set Up Joule Studio](https://help.sap.com/docs/Joule_Studio/45f9d2b8914b4f0ba731570ff9a85313/04b323352fa645238211ce017f634d34.html) or the [Discovery Center mission](https://discovery-center.cloud.sap/missiondetail/4651/4940/).
 - You have [configured the destinations to the OData services](joulestudio-skill-environment-setup)
 - You have [created and configured the action projects](joulestudio-skill-action-create)
 
@@ -119,7 +119,7 @@ parser: v2
 
 5. Choose **Review**, then choose **Create**.
 
-6. In Joule Studio, choose **Create** **>** **Joule Skill**.
+6. In Joule Studio classic, choose **Create** **>** **Joule Skill**.
 
     <!-- border -->
     ![Joule Studio](joulestudio-skill-skill6.png)
